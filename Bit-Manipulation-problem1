@@ -1,0 +1,38 @@
+/*Given a binary String of length N,find all the strings generated from N left rotations one character at a time. 
+Out of the generated N strings, return number of strings having even decimal value. 
+Eg : N=3
+     string = 101
+     answer = 1  */
+     
+     
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+class TestClass
+{
+public static void main(String args[] ) throws Exception
+{
+Scanner s = new Scanner(System.in);
+int t = s.nextInt();
+for(int z=0;z<t;z++)
+{int count=0;
+int num =s.nextInt();
+String binary = s.next();
+for(int i=0;i<binary.length();i++)
+{
+if(binary.charAt(i)=='0')
+{
+count++;
+}
+}
+System.out.println(count);
+}
+
+}
+}
+     
+     
+
